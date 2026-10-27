@@ -2,15 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Poornashri M | Full Stack Developer</title>
+  <title>Poornashri M — Full Stack Developer</title>
 
   <link rel="stylesheet" href="creative.css">
 </head>
 
 <body>
+
+  <!-- =====================================================
+       RIGHT SIDE DOT NAVIGATION
+  ====================================================== -->
+
+  <div class="dots">
+
+    <div class="dot active" data-index="0"></div>
+    <div class="dot" data-index="1"></div>
+    <div class="dot" data-index="2"></div>
+    <div class="dot" data-index="3"></div>
+    <div class="dot" data-index="4"></div>
+
+  </div>
+
+
+  <!-- =====================================================
+       ALL SLIDES
+  ====================================================== -->
 
   <div id="slides">
 
@@ -21,20 +40,21 @@
 
     <section class="slide home-page" id="home">
 
-      <div class="home-container">
+      <main class="home-container">
 
-        <div class="hero-card">
+        <div class="hero-card reveal-on-load">
 
           <div class="hero-content">
 
             <img
+              class="profile-thumb"
               src="assets/profile.jpg"
               alt="Poornashri"
-              class="profile-thumb"
             >
 
             <h1>
-              Hi, I'm <span>Poornashri</span>
+              Hi, I'm
+              <span>Poornashri</span>
             </h1>
 
             <h2>
@@ -51,6 +71,7 @@
               integration. Focused on creating user-centered interfaces
               with clean architecture and production-ready implementations.
             </p>
+
 
             <div class="hero-buttons">
 
@@ -74,7 +95,7 @@
 
         </div>
 
-      </div>
+      </main>
 
     </section>
 
@@ -86,13 +107,14 @@
 
     <section class="slide about-page" id="about">
 
-      <div class="about-container">
+      <main class="about-container">
 
-        <div class="about-content">
+
+        <!-- ABOUT -->
+
+        <div class="about-card reveal-on-load">
 
           <h2>ABOUT</h2>
-
-          <div class="heading-line"></div>
 
           <p>
             I am a Full Stack Web Developer with hands-on experience
@@ -105,9 +127,6 @@
             I enjoy transforming ideas into intuitive user interfaces
             and secure backend systems, ensuring clean architecture,
             scalability, and production-ready performance.
-          </p>
-
-          <p>
             My approach combines thoughtful UI/UX design with strong
             backend development practices to create reliable and
             user-centered digital products.
@@ -123,104 +142,133 @@
 
 
 
-        <div class="skills-content">
+        <!-- SKILLS -->
+
+        <div class="skills-card reveal-on-load">
 
           <h2>SKILLS</h2>
 
-          <div class="heading-line"></div>
-
           <div class="skills">
 
-            <span class="skill">⚛️ React</span>
+            <span class="skill">
+              <span>⚛️</span>
+              React
+            </span>
 
-            <span class="skill">🚀 FastAPI</span>
+            <span class="skill">
+              <span>🚀</span>
+              FastAPI
+            </span>
 
-            <span class="skill">🐍 Python</span>
+            <span class="skill">
+              <span>🐍</span>
+              Python
+            </span>
 
-            <span class="skill">🐘 PostgreSQL</span>
+            <span class="skill">
+              <span>🐘</span>
+              PostgreSQL
+            </span>
 
-            <span class="skill">🌊 Tailwind CSS</span>
+            <span class="skill">
+              <span>🌬️</span>
+              Tailwind CSS
+            </span>
 
-            <span class="skill">🟨 JavaScript</span>
+            <span class="skill">
+              <span>🟨</span>
+              JavaScript
+            </span>
 
-            <span class="skill">📄 HTML</span>
+            <span class="skill">
+              <span>📄</span>
+              HTML
+            </span>
 
-            <span class="skill">🐱 GitHub</span>
+            <span class="skill">
+              <span>🐱</span>
+              GitHub
+            </span>
 
-            <span class="skill">🗄️ MySQL</span>
+            <span class="skill">
+              <span>🗄️</span>
+              MySQL
+            </span>
 
-            <span class="skill">🎨 Figma</span>
+            <span class="skill">
+              <span>🎨</span>
+              Figma
+            </span>
 
           </div>
 
         </div>
 
-      </div>
+
+
+        <!-- =================================================
+             MOVING TICKER
+        ================================================== -->
+
+        <div class="about-ticker">
+
+          <div class="ticker-track">
+
+            <span>FULL STACK DEVELOPMENT</span>
+            <b>•</b>
+
+            <span>REACT</span>
+            <b>•</b>
+
+            <span>FASTAPI</span>
+            <b>•</b>
+
+            <span>PYTHON</span>
+            <b>•</b>
+
+            <span>POSTGRESQL</span>
+            <b>•</b>
+
+            <span>UI/UX DESIGN</span>
+            <b>•</b>
+
+            <span>AI / ML</span>
+            <b>•</b>
+
+            <span>DATA SCIENCE</span>
+            <b>•</b>
+
+            <span>FULL STACK DEVELOPMENT</span>
+            <b>•</b>
+
+            <span>REACT</span>
+            <b>•</b>
+
+            <span>FASTAPI</span>
+            <b>•</b>
+
+            <span>PYTHON</span>
+            <b>•</b>
+
+            <span>POSTGRESQL</span>
+            <b>•</b>
+
+            <span>UI/UX DESIGN</span>
+            <b>•</b>
+
+            <span>AI / ML</span>
+            <b>•</b>
+
+            <span>DATA SCIENCE</span>
+            <b>•</b>
+
+          </div>
+
+        </div>
+
+      </main>
 
     </section>
-
-
-
-    <!-- =====================================================
-         MOVING DIVIDER
-         BETWEEN ABOUT AND PROJECTS
-    ====================================================== -->
-
-    <div class="ticker-divider">
-
-      <div class="ticker-track">
-
-        <span>FULL STACK DEVELOPMENT</span>
-        <b>•</b>
-
-        <span>REACT</span>
-        <b>•</b>
-
-        <span>FASTAPI</span>
-        <b>•</b>
-
-        <span>PYTHON</span>
-        <b>•</b>
-
-        <span>POSTGRESQL</span>
-        <b>•</b>
-
-        <span>UI/UX DESIGN</span>
-        <b>•</b>
-
-        <span>AI / ML</span>
-        <b>•</b>
-
-        <span>DATA SCIENCE</span>
-        <b>•</b>
-
-        <span>FULL STACK DEVELOPMENT</span>
-        <b>•</b>
-
-        <span>REACT</span>
-        <b>•</b>
-
-        <span>FASTAPI</span>
-        <b>•</b>
-
-        <span>PYTHON</span>
-        <b>•</b>
-
-        <span>POSTGRESQL</span>
-        <b>•</b>
-
-        <span>UI/UX DESIGN</span>
-        <b>•</b>
-
-        <span>AI / ML</span>
-        <b>•</b>
-
-        <span>DATA SCIENCE</span>
-        <b>•</b>
-
-      </div>
-
-    </div>
 
 
 
@@ -228,9 +276,12 @@
          PAGE 3 — PROJECTS
     ====================================================== -->
 
-    <section class="slide projects-page" id="projects">
+    <section
+      class="slide projects-page"
+      id="projects"
+    >
 
-      <div class="projects-container">
+      <main class="projects-container">
 
         <h2 class="section-title">
           RECENT PROJECTS
@@ -240,9 +291,9 @@
         <div class="projects-grid">
 
 
-          <!-- 1 -->
+          <!-- PROJECT 1 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -290,9 +341,9 @@
 
 
 
-          <!-- 2 -->
+          <!-- PROJECT 2 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -340,9 +391,9 @@
 
 
 
-          <!-- 3 -->
+          <!-- PROJECT 3 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -356,11 +407,12 @@
               <p>
                 Developed an interactive Tic-Tac-Toe game using
                 React with dynamic state updates and conditional
-                rendering logic.
+                rendering logic. Implemented game state management
+                to track moves, detect winners, and reset gameplay.
               </p>
 
               <div class="project-tech">
-                React • CSS • React Hooks
+                React • CSS Animations • React Hooks
               </div>
 
               <div class="project-buttons">
@@ -389,9 +441,9 @@
 
 
 
-          <!-- 4 -->
+          <!-- PROJECT 4 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -405,7 +457,8 @@
               <p>
                 Developed a dynamic Tree View component in React
                 to visualize hierarchical data structures with
-                expandable and collapsible nodes.
+                expandable and collapsible nodes. Implemented
+                recursive rendering and state management.
               </p>
 
               <div class="project-tech">
@@ -438,9 +491,9 @@
 
 
 
-          <!-- 5 -->
+          <!-- PROJECT 5 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -454,7 +507,9 @@
               <p>
                 Developed Smart Lingua, an interactive language
                 learning web application with dynamic content
-                management and user authentication.
+                management and user authentication. Designed
+                structured modules for vocabulary, quizzes,
+                and progress tracking.
               </p>
 
               <div class="project-tech">
@@ -487,9 +542,9 @@
 
 
 
-          <!-- 6 -->
+          <!-- PROJECT 6 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -504,7 +559,7 @@
                 Built a secure real-time bookmark management system
                 using Next.js and Supabase, implementing Google OAuth,
                 protected routing, PostgreSQL Row-Level Security,
-                and Supabase Realtime.
+                and Supabase Realtime subscriptions.
               </p>
 
               <div class="project-tech">
@@ -537,9 +592,9 @@
 
 
 
-          <!-- 7 -->
+          <!-- PROJECT 7 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -553,7 +608,8 @@
               <p>
                 Designed and prototyped a modern trekking platform
                 with categorized trail exploration and interactive
-                card-based navigation.
+                card-based navigation. Built reusable Figma components
+                and interactive product flows.
               </p>
 
               <div class="project-tech">
@@ -578,9 +634,9 @@
 
 
 
-          <!-- 8 -->
+          <!-- PROJECT 8 -->
 
-          <article class="project-card">
+          <article class="project-card reveal-on-load">
 
             <div
               class="project-image"
@@ -626,7 +682,7 @@
 
         </div>
 
-      </div>
+      </main>
 
     </section>
 
@@ -636,26 +692,35 @@
          PAGE 4 — EXPERIENCE
     ====================================================== -->
 
-    <section class="slide experience-page" id="experience">
+    <section
+      class="slide experience-page"
+      id="experience"
+    >
 
-      <div class="experience-container">
+      <main class="experience-container">
 
         <h2 class="section-title experience-title">
           EXPERIENCE
         </h2>
 
 
-        <!-- COMPANY 1 -->
+        <!-- EXPERIENCE 1 -->
 
-        <div class="experience-row">
+        <div class="experience-item reveal-on-load">
 
           <div class="experience-company">
 
-            <h3>One Vega System Limited</h3>
+            <h3>
+              One Vega System Limited
+            </h3>
 
-            <p>Web Developer</p>
+            <span>
+              Web Developer
+            </span>
 
-            <span>Bangalore, India</span>
+            <span>
+              Bangalore, India
+            </span>
 
           </div>
 
@@ -663,17 +728,19 @@
           <div class="experience-description">
 
             <p>
-              Worked on developing the company's Invoice Management
-              website, including dashboard, client management,
-              invoice creation, and item handling modules.
-              Built responsive UI screens using HTML, CSS,
+              At One Vega System Limited, I worked on developing
+              the company's Invoice Management website, which
+              included modules such as the dashboard, client
+              management, invoice creation, and item handling.
+              I built responsive UI screens in HTML, CSS,
               JavaScript, and React.
             </p>
 
             <p>
-              Created reusable components, improved page layouts,
+              I created reusable components, improved page layouts,
               optimized user workflows, integrated UI with backend
-              APIs, and fixed UI bugs.
+              APIs, and fixed UI bugs to ensure smooth functionality
+              across devices.
             </p>
 
           </div>
@@ -682,17 +749,23 @@
 
 
 
-        <!-- COMPANY 2 -->
+        <!-- EXPERIENCE 2 -->
 
-        <div class="experience-row">
+        <div class="experience-item reveal-on-load">
 
           <div class="experience-company">
 
-            <h3>IonIdea</h3>
+            <h3>
+              IonIdea
+            </h3>
 
-            <p>Full Stack Developer Intern</p>
+            <span>
+              Full Stack Developer Intern
+            </span>
 
-            <span>Whitefield, Bangalore</span>
+            <span>
+              Whitefield, Bangalore
+            </span>
 
           </div>
 
@@ -700,23 +773,27 @@
           <div class="experience-description">
 
             <p>
-              Worked on backend and API development for internal
-              applications. Created REST APIs using FastAPI and
-              Python, implemented CRUD operations, and designed
-              database models using MySQL.
+              During my internship at IonIdea, I worked on backend
+              and API development for internal applications.
+              I created REST APIs using FastAPI and Python,
+              implemented CRUD operations, and designed database
+              models in MySQL.
             </p>
 
             <p>
-              Worked on backend issues, request validation,
-              API testing, Swagger documentation, and
-              database-driven applications.
+              My tasks included fixing backend issues, validating
+              requests, improving API performance, and testing
+              endpoints using Swagger and Postman. This experience
+              strengthened my understanding of full-stack development,
+              backend architecture, and database-driven applications.
             </p>
 
           </div>
 
         </div>
 
-      </div>
+
+      </main>
 
     </section>
 
@@ -726,9 +803,12 @@
          PAGE 5 — CONTACT
     ====================================================== -->
 
-    <section class="slide contact-page" id="contact">
+    <section
+      class="slide contact-page"
+      id="contact"
+    >
 
-      <div class="contact-container">
+      <main class="contact-container">
 
         <h2 class="section-title contact-title">
           CONTACT ME
@@ -736,6 +816,9 @@
 
 
         <div class="contact-icons">
+
+
+          <!-- MAIL -->
 
           <a
             href="mailto:yourmail@gmail.com"
@@ -747,10 +830,15 @@
               alt="Email"
             >
 
-            <span>Mail</span>
+            <span>
+              Mail
+            </span>
 
           </a>
 
+
+
+          <!-- LINKEDIN -->
 
           <a
             href="https://www.linkedin.com/in/poornashri-m-43462a24b/"
@@ -763,10 +851,15 @@
               alt="LinkedIn"
             >
 
-            <span>LinkedIn</span>
+            <span>
+              LinkedIn
+            </span>
 
           </a>
 
+
+
+          <!-- GITHUB -->
 
           <a
             href="https://github.com/Poorna038"
@@ -779,10 +872,15 @@
               alt="GitHub"
             >
 
-            <span>GitHub</span>
+            <span>
+              GitHub
+            </span>
 
           </a>
 
+
+
+          <!-- INSTAGRAM -->
 
           <a
             href="https://instagram.com/yourusername"
@@ -795,18 +893,207 @@
               alt="Instagram"
             >
 
-            <span>Instagram</span>
+            <span>
+              Instagram
+            </span>
 
           </a>
 
+
         </div>
 
-      </div>
+      </main>
 
     </section>
 
+
   </div>
 
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    const dots =
+      document.querySelectorAll(".dot");
+
+    const slides =
+      document.querySelectorAll(".slide");
+
+
+    /* -----------------------------------------------
+       DOT NAVIGATION
+    ------------------------------------------------ */
+
+    function setActive(index) {
+
+      dots.forEach(dot => {
+
+        dot.classList.remove("active");
+
+      });
+
+      if (dots[index]) {
+
+        dots[index].classList.add("active");
+
+      }
+
+    }
+
+
+    dots.forEach(dot => {
+
+      dot.addEventListener("click", () => {
+
+        const index =
+          Number(dot.dataset.index);
+
+        slides[index].scrollIntoView({
+          behavior: "smooth"
+        });
+
+        setActive(index);
+
+      });
+
+    });
+
+
+
+    /* -----------------------------------------------
+       UPDATE ACTIVE DOT WHILE SCROLLING
+    ------------------------------------------------ */
+
+    const slideObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              const index =
+                Array.from(slides)
+                  .indexOf(entry.target);
+
+              setActive(index);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.55
+        }
+      );
+
+
+    slides.forEach(slide => {
+
+      slideObserver.observe(slide);
+
+    });
+
+
+
+    /* -----------------------------------------------
+       REVEAL ANIMATION
+    ------------------------------------------------ */
+
+    const revealObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("reveal");
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    document
+      .querySelectorAll(".reveal-on-load")
+      .forEach(element => {
+
+        revealObserver.observe(element);
+
+      });
+
+
+
+    /* -----------------------------------------------
+       KEYBOARD NAVIGATION
+    ------------------------------------------------ */
+
+    window.addEventListener(
+      "keydown",
+      event => {
+
+        const activeIndex =
+          Array.from(dots)
+            .findIndex(
+              dot =>
+                dot.classList.contains("active")
+            );
+
+
+        if (event.key === "ArrowDown") {
+
+          const next =
+            Math.min(
+              activeIndex + 1,
+              slides.length - 1
+            );
+
+          slides[next].scrollIntoView({
+            behavior: "smooth"
+          });
+
+          setActive(next);
+
+        }
+
+
+        if (event.key === "ArrowUp") {
+
+          const previous =
+            Math.max(
+              activeIndex - 1,
+              0
+            );
+
+          slides[previous].scrollIntoView({
+            behavior: "smooth"
+          });
+
+          setActive(previous);
+
+        }
+
+      }
+    );
+
+
+  </script>
 
 </body>
 
