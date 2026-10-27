@@ -1,798 +1,914 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Poornashri M | Full Stack Developer</title>
+  <title>Poornashri M — Full Stack Developer</title>
 
-  <link rel="stylesheet" href="creative.css" />
+  <link rel="stylesheet" href="creative.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       DOT NAVIGATION
-  ========================== -->
+  <!-- =====================================================
+       RIGHT SIDE DOT NAVIGATION
+  ====================================================== -->
 
   <div class="dots">
+
     <div class="dot active" data-index="0"></div>
     <div class="dot" data-index="1"></div>
     <div class="dot" data-index="2"></div>
     <div class="dot" data-index="3"></div>
     <div class="dot" data-index="4"></div>
+
   </div>
 
 
   <!-- =====================================================
-       PAGE 1 - HOME
+       ALL SLIDES
   ====================================================== -->
 
-  <section class="slide home-page" id="home">
+  <div id="slides">
 
-    <div class="home-container">
 
-      <div class="hero-card">
+    <!-- =====================================================
+         PAGE 1 — HOME
+    ====================================================== -->
 
-        <div class="hero-content">
+    <section class="slide home-page" id="home">
 
-          <img
-            src="assets/profile.jpg"
-            alt="Poornashri"
-            class="profile-image"
-          />
+      <main class="home-container">
 
-          <h1>
-            Hi, I'm
-            <span>Poornashri</span>
-          </h1>
+        <div class="hero-card reveal-on-load">
 
-          <h2>
-            Full Stack Developer + UI/UX Designer
-          </h2>
+          <div class="hero-content">
+
+            <img
+              class="profile-thumb"
+              src="assets/profile.jpg"
+              alt="Poornashri"
+            >
+
+            <h1>
+              Hi, I'm
+              <span>Poornashri</span>
+            </h1>
+
+            <h2>
+              Full Stack Developer + UI/UX Designer
+            </h2>
+
+            <p>
+              Full Stack Web Developer with hands-on experience in
+              React, Next.js, FastAPI, Python, and PostgreSQL,
+              complemented by strong UI/UX design skills using Figma.
+              Experienced in building secure, scalable web applications
+              with OAuth authentication, session management,
+              Row-Level Security (RLS), and real-time database
+              integration. Focused on creating user-centered interfaces
+              with clean architecture and production-ready implementations.
+            </p>
+
+
+            <div class="hero-buttons">
+
+              <a
+                href="#projects"
+                class="button primary-button"
+              >
+                See Projects
+              </a>
+
+              <a
+                href="#contact"
+                class="button outline-button"
+              >
+                Contact Me
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 2 — ABOUT + SKILLS
+    ====================================================== -->
+
+    <section class="slide about-page" id="about">
+
+      <main class="about-container">
+
+
+        <!-- ABOUT -->
+
+        <div class="about-card reveal-on-load">
+
+          <h2>ABOUT</h2>
 
           <p>
-            Full Stack Web Developer with hands-on experience in
-            React, Next.js, FastAPI, Python, and PostgreSQL,
-            complemented by strong UI/UX design skills using Figma.
-            Experienced in building secure, scalable web applications
-            with OAuth authentication, session management,
-            Row-Level Security (RLS), and real-time database
-            integration. Focused on creating user-centered
-            interfaces with clean architecture and
-            production-ready implementations.
+            I am a Full Stack Web Developer with hands-on experience
+            building end-to-end web applications, including invoice
+            management systems, dashboards, interactive tools, and
+            database-driven CRUD platforms.
           </p>
 
-          <div class="hero-buttons">
+          <p>
+            I enjoy transforming ideas into intuitive user interfaces
+            and secure backend systems, ensuring clean architecture,
+            scalability, and production-ready performance.
+            My approach combines thoughtful UI/UX design with strong
+            backend development practices to create reliable and
+            user-centered digital products.
+          </p>
 
-            <a href="#projects" class="button primary-button">
-              See Projects
-            </a>
-
-            <a href="#contact" class="button outline-button">
-              Contact Me
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       PAGE 2 - ABOUT + SKILLS
-  ====================================================== -->
-
-  <section class="slide about-page" id="about">
-
-    <div class="about-container">
-
-      <!-- ABOUT -->
-
-      <div class="about-card">
-
-        <h2>ABOUT</h2>
-
-        <p>
-          I am a Full Stack Web Developer with hands-on experience
-          building end-to-end web applications, including invoice
-          management systems, dashboards, interactive tools, and
-          database-driven CRUD platforms.
-        </p>
-
-        <p>
-          I enjoy transforming ideas into intuitive user interfaces
-          and secure backend systems, ensuring clean architecture,
-          scalability, and production-ready performance. My approach combines thoughtful UI/UX design with strong
-          backend development practices to create reliable and
-          user-centered digital products.
-        </p>
-
-        <p>
-          Beyond coding, you'll often find me experimenting with
-          new recipes, capturing spontaneous shots through
-          photography, or trekking to explore new places.
-        </p>
-
-      </div>
-
-
-      <!-- SKILLS -->
-
-      <div class="skills-card">
-
-        <h2>SKILLS</h2>
-
-        <div class="skills">
-
-          <div class="skill">
-            <span>⚛️</span>
-            React
-          </div>
-
-          <div class="skill">
-            <span>🚀</span>
-            FastAPI
-          </div>
-
-          <div class="skill">
-            <span>🐍</span>
-            Python
-          </div>
-
-          <div class="skill">
-            <span>🐘</span>
-            PostgreSQL
-          </div>
-
-          <div class="skill">
-            <span>🌊</span>
-            Tailwind CSS
-          </div>
-
-          <div class="skill">
-            <span>🟨</span>
-            JavaScript
-          </div>
-
-          <div class="skill">
-            <span>📄</span>
-            HTML
-          </div>
-
-          <div class="skill">
-            <span>🐱</span>
-            GitHub
-          </div>
-
-          <div class="skill">
-            <span>🗄️</span>
-            MySQL
-          </div>
-
-          <div class="skill">
-            <span>🎨</span>
-            Figma
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       PAGE 3 - PROJECTS
-  ====================================================== -->
-
-  <section class="slide projects-page" id="projects">
-
-    <div class="projects-container">
-
-      <h2 class="section-title">
-        RECENT PROJECTS
-      </h2>
-
-
-      <div class="projects-grid">
-
-
-        <!-- PROJECT 1 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('nutrigen.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>NutriGen AI</h3>
-
-            <p>
-              Designed and developed NutriGen AI, an AI-powered
-              recipe generation web application that creates
-              personalized meals based on user ingredients and
-              dietary preferences.
-            </p>
-
-            <div class="project-tech">
-              Framer • React • UI/UX Design • Figma • AI Integration
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://attractive-products-425244.framer.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/Poorna038/NutriGen-AI.git"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
-
-          </div>
+          <p>
+            Beyond coding, you'll often find me experimenting with
+            new recipes, capturing spontaneous shots through
+            photography, or trekking to explore new places.
+          </p>
 
         </div>
 
 
-        <!-- PROJECT 2 -->
 
-        <div class="project-card">
+        <!-- SKILLS -->
 
-          <div
-            class="project-image"
-            style="background-image: url('business.webp');"
-          ></div>
+        <div class="skills-card reveal-on-load">
 
-          <div class="project-content">
+          <h2>SKILLS</h2>
 
-            <h3>Invoice Management</h3>
+          <div class="skills">
 
-            <p>
-              Built a full-stack invoice management system with
-              client, invoice, and item tracking functionalities.
-              Designed REST APIs for CRUD operations and integrated
-              PostgreSQL for structured relational data management.
-            </p>
+            <span class="skill">
+              <span>⚛️</span>
+              React
+            </span>
 
-            <div class="project-tech">
-              React • FastAPI • PostgreSQL • Docker
-            </div>
+            <span class="skill">
+              <span>🚀</span>
+              FastAPI
+            </span>
 
-            <div class="project-buttons">
+            <span class="skill">
+              <span>🐍</span>
+              Python
+            </span>
 
-              <a
-                href="https://invoicesite.netlify.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
+            <span class="skill">
+              <span>🐘</span>
+              PostgreSQL
+            </span>
 
-              <a
-                href="https://github.com/Poorna038/Internshrip1"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
+            <span class="skill">
+              <span>🌬️</span>
+              Tailwind CSS
+            </span>
 
-            </div>
+            <span class="skill">
+              <span>🟨</span>
+              JavaScript
+            </span>
 
-          </div>
+            <span class="skill">
+              <span>📄</span>
+              HTML
+            </span>
 
-        </div>
+            <span class="skill">
+              <span>🐱</span>
+              GitHub
+            </span>
 
+            <span class="skill">
+              <span>🗄️</span>
+              MySQL
+            </span>
 
-        <!-- PROJECT 3 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('tictactoe.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>Tic-Tac-Toe</h3>
-
-            <p>
-              Developed an interactive Tic-Tac-Toe game using React
-              with dynamic state updates and conditional rendering.
-              Implemented game state management to track moves,
-              detect winners, and reset gameplay efficiently.
-            </p>
-
-            <div class="project-tech">
-              React • CSS Animations • React Hooks
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://tictactoe038.netlify.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/Poorna038/Tictactoe"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- PROJECT 4 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('reacttree.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>React Tree</h3>
-
-            <p>
-              Developed a dynamic Tree View component in React to
-              visualize hierarchical data structures with expandable
-              and collapsible nodes. Implemented recursive rendering
-              and state management to handle nested data.
-            </p>
-
-            <div class="project-tech">
-              React • JavaScript • Tailwind
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://react-tree1.netlify.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/Poorna038/ReactTree.git"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- PROJECT 5 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('smartai.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>SmartLingua</h3>
-
-            <p>
-              Developed Smart Lingua, an interactive language
-              learning web application with dynamic content
-              management and user authentication.
-            </p>
-
-            <div class="project-tech">
-              React • JavaScript • Tailwind
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://smartlingua.netlify.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/Poorna038/Smart.git"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- PROJECT 6 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('smartbook.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>Smart BookMark App</h3>
-
-            <p>
-              Built a secure real-time bookmark management system
-              using Next.js and Supabase. Implemented Google OAuth
-              authentication, protected routing, PostgreSQL
-              Row-Level Security and Supabase Realtime subscriptions.
-            </p>
-
-            <div class="project-tech">
-              React • Next.js • Supabase • Google OAuth • Vercel
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://smart-bookmark-app-two-azure.vercel.app/"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/Poorna038/smart-bookmark-app.git"
-                target="_blank"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- PROJECT 7 -->
-
-        <div class="project-card">
-
-          <div
-            class="project-image"
-            style="background-image: url('peakup.png');"
-          ></div>
-
-          <div class="project-content">
-
-            <h3>Peak UP</h3>
-
-            <p>
-              Designed and prototyped a modern trekking platform
-              with categorized trail exploration and interactive
-              card-based navigation.
-            </p>
-
-            <div class="project-tech">
+            <span class="skill">
+              <span>🎨</span>
               Figma
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="https://www.figma.com/proto/mwNo0in2f2slZT2AOvvobV/Project"
-                target="_blank"
-                class="button primary-button small-button"
-              >
-                View Demo
-              </a>
-
-            </div>
+            </span>
 
           </div>
 
         </div>
 
 
-        <!-- PROJECT 8 -->
 
-        <div class="project-card">
+        <!-- =================================================
+             MOVING TICKER
+        ================================================== -->
 
-          <div
-            class="project-image"
-            style="background-image: url('assets/backend-snap.jpg');"
-          ></div>
+        <div class="about-ticker">
 
-          <div class="project-content">
+          <div class="ticker-track">
 
-            <h3>Company Backend</h3>
+            <span>FULL STACK DEVELOPMENT</span>
+            <b>•</b>
+
+            <span>REACT</span>
+            <b>•</b>
+
+            <span>FASTAPI</span>
+            <b>•</b>
+
+            <span>PYTHON</span>
+            <b>•</b>
+
+            <span>POSTGRESQL</span>
+            <b>•</b>
+
+            <span>UI/UX DESIGN</span>
+            <b>•</b>
+
+            <span>AI / ML</span>
+            <b>•</b>
+
+            <span>DATA SCIENCE</span>
+            <b>•</b>
+
+            <span>FULL STACK DEVELOPMENT</span>
+            <b>•</b>
+
+            <span>REACT</span>
+            <b>•</b>
+
+            <span>FASTAPI</span>
+            <b>•</b>
+
+            <span>PYTHON</span>
+            <b>•</b>
+
+            <span>POSTGRESQL</span>
+            <b>•</b>
+
+            <span>UI/UX DESIGN</span>
+            <b>•</b>
+
+            <span>AI / ML</span>
+            <b>•</b>
+
+            <span>DATA SCIENCE</span>
+            <b>•</b>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 3 — PROJECTS
+    ====================================================== -->
+
+    <section
+      class="slide projects-page"
+      id="projects"
+    >
+
+      <main class="projects-container">
+
+        <h2 class="section-title">
+          RECENT PROJECTS
+        </h2>
+
+
+        <div class="projects-grid">
+
+
+          <!-- PROJECT 1 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('nutrigen.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>NutriGen AI</h3>
+
+              <p>
+                Designed and developed NutriGen AI, an AI-powered
+                recipe generation web application that creates
+                personalized meals based on user ingredients and
+                dietary preferences.
+              </p>
+
+              <div class="project-tech">
+                Framer • React • UI/UX Design • Figma • AI Integration
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://attractive-products-425244.framer.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/NutriGen-AI.git"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 2 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('business.webp')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>Invoice Management</h3>
+
+              <p>
+                Built a full-stack invoice management system with
+                client, invoice, and item tracking functionalities.
+                Designed REST APIs for CRUD operations and integrated
+                PostgreSQL for structured relational data management.
+              </p>
+
+              <div class="project-tech">
+                React • FastAPI • PostgreSQL • Docker
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://invoicesite.netlify.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/Internshrip1"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 3 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('tictactoe.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>Tic-Tac-Toe</h3>
+
+              <p>
+                Developed an interactive Tic-Tac-Toe game using
+                React with dynamic state updates and conditional
+                rendering logic. Implemented game state management
+                to track moves, detect winners, and reset gameplay.
+              </p>
+
+              <div class="project-tech">
+                React • CSS Animations • React Hooks
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://tictactoe038.netlify.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/Tictactoe"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 4 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('reacttree.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>React Tree</h3>
+
+              <p>
+                Developed a dynamic Tree View component in React
+                to visualize hierarchical data structures with
+                expandable and collapsible nodes. Implemented
+                recursive rendering and state management.
+              </p>
+
+              <div class="project-tech">
+                React • JavaScript • Tailwind
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://react-tree1.netlify.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/ReactTree.git"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 5 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('smartai.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>SmartLingua</h3>
+
+              <p>
+                Developed Smart Lingua, an interactive language
+                learning web application with dynamic content
+                management and user authentication. Designed
+                structured modules for vocabulary, quizzes,
+                and progress tracking.
+              </p>
+
+              <div class="project-tech">
+                React • JavaScript • Tailwind
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://smartlingua.netlify.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/Smart.git"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 6 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('smartbook.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>Smart Bookmark App</h3>
+
+              <p>
+                Built a secure real-time bookmark management system
+                using Next.js and Supabase, implementing Google OAuth,
+                protected routing, PostgreSQL Row-Level Security,
+                and Supabase Realtime subscriptions.
+              </p>
+
+              <div class="project-tech">
+                Next.js • Supabase • Google OAuth • Vercel
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://smart-bookmark-app-two-azure.vercel.app/"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Poorna038/smart-bookmark-app.git"
+                  target="_blank"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 7 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('peakup.png')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>Peak UP</h3>
+
+              <p>
+                Designed and prototyped a modern trekking platform
+                with categorized trail exploration and interactive
+                card-based navigation. Built reusable Figma components
+                and interactive product flows.
+              </p>
+
+              <div class="project-tech">
+                Figma • UI/UX Design
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://www.figma.com/proto/mwNo0in2f2slZT2AOvvobV/Project"
+                  target="_blank"
+                  class="button primary-button small-button"
+                >
+                  View Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 8 -->
+
+          <article class="project-card reveal-on-load">
+
+            <div
+              class="project-image"
+              style="background-image:url('assets/backend-snap.jpg')"
+            ></div>
+
+            <div class="project-content">
+
+              <h3>Company Backend</h3>
+
+              <p>
+                Backend APIs built for a company including
+                authentication, CRUD operations, integrations,
+                database models, and API documentation.
+              </p>
+
+              <div class="project-tech">
+                FastAPI • SQLAlchemy • PostgreSQL • Swagger
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="#"
+                  class="button primary-button small-button"
+                >
+                  API / Docs
+                </a>
+
+                <a
+                  href="#"
+                  class="button outline-button small-button"
+                >
+                  View Repo
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </main>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 4 — EXPERIENCE
+    ====================================================== -->
+
+    <section
+      class="slide experience-page"
+      id="experience"
+    >
+
+      <main class="experience-container">
+
+        <h2 class="section-title experience-title">
+          EXPERIENCE
+        </h2>
+
+
+        <!-- EXPERIENCE 1 -->
+
+        <div class="experience-item reveal-on-load">
+
+          <div class="experience-company">
+
+            <h3>
+              One Vega System Limited
+            </h3>
+
+            <span>
+              Web Developer
+            </span>
+
+            <span>
+              Bangalore, India
+            </span>
+
+          </div>
+
+
+          <div class="experience-description">
 
             <p>
-              Backend APIs built for a company including
-              authentication, CRUD operations, and integrations
-              using FastAPI. Designed with production deployment
-              in mind.
+              At One Vega System Limited, I worked on developing
+              the company's Invoice Management website, which
+              included modules such as the dashboard, client
+              management, invoice creation, and item handling.
+              I built responsive UI screens in HTML, CSS,
+              JavaScript, and React.
             </p>
 
-            <div class="project-tech">
-              FastAPI • SQLAlchemy • PostgreSQL • Swagger
-            </div>
-
-            <div class="project-buttons">
-
-              <a
-                href="#"
-                class="button primary-button small-button"
-              >
-                API / Docs
-              </a>
-
-              <a
-                href="#"
-                class="button outline-button small-button"
-              >
-                View Repo
-              </a>
-
-            </div>
+            <p>
+              I created reusable components, improved page layouts,
+              optimized user workflows, integrated UI with backend
+              APIs, and fixed UI bugs to ensure smooth functionality
+              across devices.
+            </p>
 
           </div>
 
         </div>
 
 
-      </div>
 
-    </div>
+        <!-- EXPERIENCE 2 -->
 
-  </section>
+        <div class="experience-item reveal-on-load">
 
+          <div class="experience-company">
 
-  <!-- =====================================================
-       PAGE 4 - EXPERIENCE
-  ====================================================== -->
+            <h3>
+              IonIdea
+            </h3>
 
-  <section
-    class="slide experience-page"
-    id="experience"
-  >
+            <span>
+              Full Stack Developer Intern
+            </span>
 
-    <div class="experience-container">
+            <span>
+              Whitefield, Bangalore
+            </span>
 
-      <h2 class="section-title experience-title">
-        EXPERIENCE
-      </h2>
-
-
-      <!-- ONE VEGA -->
-
-      <div class="experience-item">
-
-        <div class="experience-company">
-
-          <h3>
-            One Vega System Limited
-          </h3>
-
-          <span>
-            Web Developer
-          </span>
-
-          <span>
-            Bangalore, India
-          </span>
-
-        </div>
+          </div>
 
 
-        <div class="experience-description">
+          <div class="experience-description">
 
-          <p>
-            Worked on developing the company's Invoice Management
-            website, including dashboard, client management,
-            invoice creation, and item handling modules.
-          </p>
+            <p>
+              During my internship at IonIdea, I worked on backend
+              and API development for internal applications.
+              I created REST APIs using FastAPI and Python,
+              implemented CRUD operations, and designed database
+              models in MySQL.
+            </p>
 
-          <p>
-            Built responsive UI screens using HTML, CSS,
-            JavaScript, and React. Created reusable components,
-            integrated backend APIs, improved layouts, and fixed
-            UI issues to ensure smooth functionality.
-          </p>
+            <p>
+              My tasks included fixing backend issues, validating
+              requests, improving API performance, and testing
+              endpoints using Swagger and Postman. This experience
+              strengthened my understanding of full-stack development,
+              backend architecture, and database-driven applications.
+            </p>
 
-        </div>
-
-      </div>
-
-
-      <!-- IONIDEA -->
-
-      <div class="experience-item">
-
-        <div class="experience-company">
-
-          <h3>
-            IonIdea
-          </h3>
-
-          <span>
-            Full Stack Developer Intern
-          </span>
-
-          <span>
-            Whitefield, Bangalore
-          </span>
+          </div>
 
         </div>
 
 
-        <div class="experience-description">
+      </main>
 
-          <p>
-            Worked on backend and API development for internal
-            applications using FastAPI and Python.
-          </p>
+    </section>
 
-          <p>
-            Created REST APIs, implemented CRUD operations,
-            designed database models using MySQL, and worked
-            on frontend-backend integration.
-          </p>
 
-          <p>
-            Tested APIs using Swagger and Postman while fixing
-            backend issues and improving application performance.
-          </p>
+
+    <!-- =====================================================
+         PAGE 5 — CONTACT
+    ====================================================== -->
+
+    <section
+      class="slide contact-page"
+      id="contact"
+    >
+
+      <main class="contact-container">
+
+        <h2 class="section-title contact-title">
+          CONTACT ME
+        </h2>
+
+
+        <div class="contact-icons">
+
+
+          <!-- MAIL -->
+
+          <a
+            href="mailto:yourmail@gmail.com"
+            class="contact-box"
+          >
+
+            <img
+              src="email.jpg"
+              alt="Email"
+            >
+
+            <span>
+              Mail
+            </span>
+
+          </a>
+
+
+
+          <!-- LINKEDIN -->
+
+          <a
+            href="https://www.linkedin.com/in/poornashri-m-43462a24b/"
+            target="_blank"
+            class="contact-box"
+          >
+
+            <img
+              src="linkedin.jpg"
+              alt="LinkedIn"
+            >
+
+            <span>
+              LinkedIn
+            </span>
+
+          </a>
+
+
+
+          <!-- GITHUB -->
+
+          <a
+            href="https://github.com/Poorna038"
+            target="_blank"
+            class="contact-box"
+          >
+
+            <img
+              src="GitHub.png"
+              alt="GitHub"
+            >
+
+            <span>
+              GitHub
+            </span>
+
+          </a>
+
+
+
+          <!-- INSTAGRAM -->
+
+          <a
+            href="https://instagram.com/yourusername"
+            target="_blank"
+            class="contact-box"
+          >
+
+            <img
+              src="insta.png"
+              alt="Instagram"
+            >
+
+            <span>
+              Instagram
+            </span>
+
+          </a>
+
 
         </div>
 
-      </div>
+      </main>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- =====================================================
-       PAGE 5 - CONTACT
-  ====================================================== -->
+  </div>
 
-  <section
-    class="slide contact-page"
-    id="contact"
-  >
-
-    <div class="contact-container">
-
-      <h2 class="section-title contact-title">
-        CONTACT ME
-      </h2>
-
-
-      <div class="contact-icons">
-
-
-        <a
-          href="mailto:yourmail@gmail.com"
-          class="contact-box"
-        >
-
-          <img
-            src="email.jpg"
-            alt="Email"
-          />
-
-          <span>
-            Mail
-          </span>
-
-        </a>
-
-
-        <a
-          href="https://www.linkedin.com/in/poornashri-m-43462a24b/"
-          target="_blank"
-          class="contact-box"
-        >
-
-          <img
-            src="linkedin.jpg"
-            alt="LinkedIn"
-          />
-
-          <span>
-            LinkedIn
-          </span>
-
-        </a>
-
-
-        <a
-          href="https://github.com/Poorna038"
-          target="_blank"
-          class="contact-box"
-        >
-
-          <img
-            src="GitHub.png"
-            alt="GitHub"
-          />
-
-          <span>
-            GitHub
-          </span>
-
-        </a>
-
-
-        <a
-          href="https://instagram.com/"
-          target="_blank"
-          class="contact-box"
-        >
-
-          <img
-            src="insta.png"
-            alt="Instagram"
-          />
-
-          <span>
-            Instagram
-          </span>
-
-        </a>
-
-
-      </div>
-
-    </div>
-
-  </section>
 
 
   <!-- =====================================================
@@ -801,18 +917,35 @@
 
   <script>
 
-    const slides =
-      document.querySelectorAll(".slide");
-
     const dots =
       document.querySelectorAll(".dot");
 
+    const slides =
+      document.querySelectorAll(".slide");
 
-    /* -------------------------------
+
+    /* -----------------------------------------------
        DOT NAVIGATION
-    -------------------------------- */
+    ------------------------------------------------ */
 
-    dots.forEach((dot) => {
+    function setActive(index) {
+
+      dots.forEach(dot => {
+
+        dot.classList.remove("active");
+
+      });
+
+      if (dots[index]) {
+
+        dots[index].classList.add("active");
+
+      }
+
+    }
+
+
+    dots.forEach(dot => {
 
       dot.addEventListener("click", () => {
 
@@ -823,20 +956,23 @@
           behavior: "smooth"
         });
 
+        setActive(index);
+
       });
 
     });
 
 
-    /* -------------------------------
-       ACTIVE DOT
-    -------------------------------- */
 
-    const observer =
+    /* -----------------------------------------------
+       UPDATE ACTIVE DOT WHILE SCROLLING
+    ------------------------------------------------ */
+
+    const slideObserver =
       new IntersectionObserver(
-        (entries) => {
+        entries => {
 
-          entries.forEach((entry) => {
+          entries.forEach(entry => {
 
             if (entry.isIntersecting) {
 
@@ -844,13 +980,7 @@
                 Array.from(slides)
                   .indexOf(entry.target);
 
-              dots.forEach((dot) => {
-                dot.classList.remove("active");
-              });
-
-              if (dots[index]) {
-                dots[index].classList.add("active");
-              }
+              setActive(index);
 
             }
 
@@ -863,23 +993,66 @@
       );
 
 
-    slides.forEach((slide) => {
-      observer.observe(slide);
+    slides.forEach(slide => {
+
+      slideObserver.observe(slide);
+
     });
 
 
-    /* -------------------------------
+
+    /* -----------------------------------------------
+       REVEAL ANIMATION
+    ------------------------------------------------ */
+
+    const revealObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("reveal");
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    document
+      .querySelectorAll(".reveal-on-load")
+      .forEach(element => {
+
+        revealObserver.observe(element);
+
+      });
+
+
+
+    /* -----------------------------------------------
        KEYBOARD NAVIGATION
-    -------------------------------- */
+    ------------------------------------------------ */
 
-    document.addEventListener(
+    window.addEventListener(
       "keydown",
-      (event) => {
+      event => {
 
-        const current =
+        const activeIndex =
           Array.from(dots)
-            .findIndex((dot) =>
-              dot.classList.contains("active")
+            .findIndex(
+              dot =>
+                dot.classList.contains("active")
             );
 
 
@@ -887,13 +1060,15 @@
 
           const next =
             Math.min(
-              current + 1,
+              activeIndex + 1,
               slides.length - 1
             );
 
           slides[next].scrollIntoView({
             behavior: "smooth"
           });
+
+          setActive(next);
 
         }
 
@@ -902,7 +1077,7 @@
 
           const previous =
             Math.max(
-              current - 1,
+              activeIndex - 1,
               0
             );
 
@@ -910,10 +1085,13 @@
             behavior: "smooth"
           });
 
+          setActive(previous);
+
         }
 
       }
     );
+
 
   </script>
 
