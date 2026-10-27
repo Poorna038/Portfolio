@@ -1,6 +1,6 @@
-/* =====================================================
-   RESET
-===================================================== */
+/* =========================================================
+   GLOBAL
+========================================================= */
 
 * {
   margin: 0;
@@ -8,324 +8,310 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
-
 
 body {
-  margin: 0;
-
-  font-family:
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
   background: #000;
-
   color: #fff;
-
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
-
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-
-
-/* =====================================================
-   SLIDES
-===================================================== */
-
-.slide {
-
-  width: 100%;
-
-  min-height: 100vh;
-
-  scroll-snap-align: start;
-
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
+img {
+  max-width: 100%;
+  display: block;
 }
 
 
+/* =========================================================
+   COLORS
+========================================================= */
 
-/* =====================================================
+:root {
+
+  --black: #000000;
+
+  --dark: #0b0b0b;
+
+  --card: #111111;
+
+  --grey: #3a3a3a;
+
+  --light-grey: #bdbdbd;
+
+  --white: #ffffff;
+
+  --pink: #ff2b7a;
+
+  --purple: #a978d5;
+
+  --blue: #20b9e8;
+
+}
+
+
+/* =========================================================
+   GENERAL PAGE
+========================================================= */
+
+.slide {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border-radius: 30px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+
+/* Main gradient button */
+
+.primary-button {
+  color: #fff;
+
+  background:
+    linear-gradient(
+      100deg,
+      var(--pink),
+      var(--purple),
+      var(--blue)
+    );
+
+  border: none;
+
+  box-shadow:
+    0 8px 25px rgba(255, 43, 122, 0.18);
+}
+
+.primary-button:hover {
+  box-shadow:
+    0 10px 30px rgba(32, 185, 232, 0.25);
+}
+
+
+/* Outline button */
+
+.outline-button {
+  color: #fff;
+
+  background: transparent;
+
+  border: 1px solid #555;
+}
+
+.outline-button:hover {
+  border-color: var(--blue);
+}
+
+
+/* Small buttons */
+
+.small-button {
+  padding: 11px 18px;
+  font-size: 13px;
+}
+
+
+/* =========================================================
    PAGE 1 — HOME
-   BACKGROUND IMAGE
-===================================================== */
+========================================================= */
 
 .home-page {
 
-  min-height: 100vh;
+  background-color: #000;
+
+  /*
+    Put background.jpg inside public folder.
+
+    Project structure:
+
+    public/
+      background.jpg
+
+    Then this path works:
+  */
 
   background-image:
-
     linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.78),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
     ),
-
-    url("background.jpg");
+    url("/background.jpg");
 
   background-size: cover;
-
   background-position: center;
-
   background-repeat: no-repeat;
+
+  padding: 70px 40px;
 }
 
+
+/* Smaller inner container */
 
 .home-container {
 
   width: 100%;
 
-  padding:
-    40px 55px;
+  max-width: 1120px;
 
-  display: flex;
+  margin: auto;
 
-  justify-content: flex-start;
 }
 
 
-
-/* =====================================================
-   HOME CARD
-   EXTENDS ALMOST TO RIGHT SIDE
-===================================================== */
+/* Hero */
 
 .hero-card {
 
-  width:
-    calc(100vw - 110px);
+  width: 100%;
 
-  min-height: 580px;
+  min-height: 650px;
 
-  padding: 55px 45px;
+  padding: 80px 70px;
 
   display: flex;
 
   align-items: center;
 
-  justify-content: flex-start;
-
   background:
-    rgba(8, 8, 8, 0.80);
+    rgba(8, 8, 8, 0.92);
 
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.13);
+  border: 1px solid #292929;
 
-  border-radius: 22px;
-
-  backdrop-filter:
-    blur(5px);
+  border-radius: 25px;
 
   box-shadow:
-    0 20px 60px
-    rgba(0, 0, 0, 0.50);
+    0 20px 60px rgba(0, 0, 0, 0.45);
+
 }
 
 
-
-/* =====================================================
-   HOME CONTENT
-===================================================== */
-
 .hero-content {
 
-  width: 100%;
+  max-width: 900px;
 
-  max-width: 850px;
 }
 
 
 .profile-thumb {
 
-  width: 92px;
-
-  height: 92px;
+  width: 90px;
+  height: 90px;
 
   border-radius: 50%;
 
   object-fit: cover;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
-  border:
-    2px solid
-    rgba(255, 255, 255, 0.12);
+  border: 2px solid #242424;
 }
 
 
 .hero-content h1 {
 
-  font-size: 52px;
+  font-size: clamp(
+    48px,
+    6vw,
+    72px
+  );
 
-  line-height: 1.1;
+  line-height: 1.05;
+
+  margin-bottom: 20px;
 
   font-weight: 800;
-
-  color: #fff;
-
-  margin-bottom: 15px;
 }
 
 
 .hero-content h1 span {
 
-  color: #ff2b75;
+  color: var(--pink);
+
 }
 
 
 .hero-content h2 {
 
-  font-size: 24px;
+  font-size: 25px;
 
-  font-weight: 600;
+  color: #aebbd0;
 
-  color: #aeb8c9;
+  margin-bottom: 35px;
 
-  margin-bottom: 28px;
 }
 
 
 .hero-content p {
 
-  max-width: 820px;
-
-  font-size: 16px;
-
-  line-height: 1.75;
+  max-width: 850px;
 
   color: #d0d0d0;
 
-  margin-bottom: 30px;
+  font-size: 18px;
+
+  line-height: 1.8;
+
 }
 
-
-
-/* =====================================================
-   BUTTONS
-   KEEP PINK → CYAN
-===================================================== */
 
 .hero-buttons {
 
   display: flex;
 
-  gap: 12px;
+  gap: 14px;
+
+  margin-top: 35px;
 
   flex-wrap: wrap;
+
 }
 
 
-.button {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding:
-    12px 22px;
-
-  border-radius: 25px;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition:
-    0.3s ease;
-}
-
-
-.primary-button {
-
-  color: #fff;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ff2b75,
-      #19c8e8
-    );
-
-  border: none;
-}
-
-
-.primary-button:hover {
-
-  transform:
-    translateY(-2px);
-
-  box-shadow:
-    0 8px 25px
-    rgba(25, 200, 232, 0.25);
-}
-
-
-.outline-button {
-
-  color: #fff;
-
-  background: transparent;
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.25);
-}
-
-
-.outline-button:hover {
-
-  border-color:
-    #19c8e8;
-
-  color:
-    #19c8e8;
-}
-
-
-.small-button {
-
-  padding:
-    9px 16px;
-
-  font-size: 13px;
-}
-
-
-
-/* =====================================================
+/* =========================================================
    PAGE 2 — ABOUT
-   BLACK
-===================================================== */
+========================================================= */
 
 .about-page {
 
-  background: #929082;
+  background: #000;
 
-  padding:
-    70px 50px;
+  padding: 80px 5%;
+
 }
 
 
@@ -333,97 +319,104 @@ a {
 
   width: 100%;
 
-  max-width: 1280px;
+  max-width: 1300px;
 
   margin: auto;
+
+}
+
+
+.about-grid {
+
+  width: 100%;
 
   display: grid;
 
   grid-template-columns:
-    1.45fr 0.75fr;
+    minmax(0, 2fr)
+    minmax(320px, 0.9fr);
 
-  gap: 30px;
+  gap: 32px;
+
 }
 
-
-
-/* =====================================================
-   ABOUT / SKILLS CARDS
-===================================================== */
 
 .about-card,
 .skills-card {
 
-  background:
-    #111;
+  background: #111;
 
-  border:
-    1px solid
-    #252525;
+  border: 1px solid #303030;
 
-  border-radius:
-    20px;
+  border-radius: 24px;
 
-  padding:
-    32px;
+  padding: 45px;
+
+}
+
+
+.about-card {
+
+  min-height: 430px;
+
+}
+
+
+.skills-card {
+
+  min-height: 430px;
+
 }
 
 
 .about-card h2,
 .skills-card h2 {
 
-  font-size: 34px;
+  font-size: 36px;
+
+  margin-bottom: 12px;
 
   color: #fff;
 
-  margin-bottom: 22px;
 }
 
 
-.about-card h2::after,
-.skills-card h2::after {
+.heading-line {
 
-  content: "";
+  width: 52px;
 
-  display: block;
+  height: 4px;
 
-  width: 48px;
+  border-radius: 10px;
 
-  height: 3px;
-
-  margin-top: 9px;
-
-  border-radius: 5px;
+  margin-bottom: 28px;
 
   background:
     linear-gradient(
       90deg,
-      #ff2b75,
-      #19c8e8
+      var(--pink),
+      var(--blue)
     );
+
 }
 
 
 .about-card p {
 
-  color:
-    #c8c8c8;
+  color: #d0d0d0;
 
-  font-size:
-    15px;
+  font-size: 16px;
 
-  line-height:
-    1.7;
+  line-height: 1.8;
 
-  margin-bottom:
-    17px;
+  margin-bottom: 22px;
+
 }
 
 
-
-/* =====================================================
+/* =========================================================
    SKILLS
-===================================================== */
+========================================================= */
 
 .skills {
 
@@ -431,926 +424,647 @@ a {
 
   flex-wrap: wrap;
 
-  gap: 10px;
+  gap: 12px;
+
 }
 
 
 .skill {
 
-  display: flex;
+  display: inline-flex;
 
   align-items: center;
 
-  gap: 7px;
+  gap: 8px;
 
-  padding:
-    9px 12px;
+  padding: 12px 16px;
 
-  background:
-    #1b1b1b;
+  border-radius: 30px;
 
-  border:
-    1px solid
-    #292929;
+  background: #1a1a1a;
 
-  border-radius:
-    20px;
+  border: 1px solid #2f2f2f;
 
-  color:
-    #fff;
+  color: #fff;
 
-  font-size:
-    13px;
+  font-size: 14px;
 
-  font-weight:
-    600;
+  font-weight: 600;
 
   transition:
-    0.25s ease;
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 
 .skill:hover {
 
-  border-color:
-    #19c8e8;
+  transform: translateY(-3px);
 
-  transform:
-    translateY(-2px);
+  border-color: var(--blue);
+
 }
 
 
+/* =========================================================
+   TICKER
+   BETWEEN PAGE 2 & PAGE 3
+========================================================= */
 
-/* =====================================================
-   ABOUT MOVING TICKER
-===================================================== */
+.ticker-section {
 
-.about-ticker {
+  width: 100%;
 
-  grid-column:
-    1 / -1;
+  overflow: hidden;
 
-  width:
-    100%;
+  background: #111;
 
-  overflow:
-    hidden;
+  border-top: 1px solid #333;
 
-  margin-top:
-    5px;
+  border-bottom: 1px solid #333;
 
-  padding:
-    15px 0;
+  padding: 20px 0;
 
-  background:
-    #080808;
-
-  border-top:
-    1px solid
-    #292929;
-
-  border-bottom:
-    1px solid
-    #292929;
 }
 
 
 .ticker-track {
 
-  display:
-    flex;
+  width: max-content;
 
-  align-items:
-    center;
+  display: flex;
 
-  gap:
-    22px;
+  align-items: center;
 
-  width:
-    max-content;
+  gap: 28px;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 
   animation:
-    tickerMove 25s
-    linear infinite;
+    tickerMove 28s linear infinite;
+
 }
 
 
 .ticker-track span {
 
-  color:
-    #fff;
+  color: #fff;
 
-  font-size:
-    13px;
+  font-size: 14px;
 
-  font-weight:
-    700;
+  font-weight: 800;
 
-  letter-spacing:
-    2px;
+  letter-spacing: 2px;
+
 }
 
 
 .ticker-track b {
 
-  color:
-    #ff2b75;
+  color: var(--pink);
 
-  font-size:
-    18px;
+  font-size: 18px;
+
 }
 
 
 @keyframes tickerMove {
 
   from {
-
-    transform:
-      translateX(0);
-
+    transform: translateX(0);
   }
 
   to {
-
-    transform:
-      translateX(-50%);
-
+    transform: translateX(-50%);
   }
 
 }
 
 
-
-/* =====================================================
+/* =========================================================
    PAGE 3 — PROJECTS
-   GREY
-===================================================== */
+========================================================= */
 
 .projects-page {
 
-  background:
-    #070707;
+  background: #3a3a3a;
 
-  padding:
-    70px 50px;
+  padding: 80px 5%;
 
-  align-items:
-    flex-start;
+  align-items: flex-start;
+
 }
 
 
 .projects-container {
 
-  width:
-    100%;
+  width: 100%;
 
-  max-width:
-    1380px;
+  max-width: 1350px;
 
-  margin:
-    0 auto;
+  margin: auto;
+
 }
 
-
-
-/* =====================================================
-   SECTION TITLE
-===================================================== */
 
 .section-title {
 
-  font-size:
-    40px;
+  font-size: 42px;
 
-  font-weight:
-    800;
+  font-weight: 800;
 
-  color:
-    #080808;
+  color: #fff;
 
-  margin-bottom:
-    35px;
+  margin-bottom: 12px;
+
 }
 
 
-.section-title::after {
-
-  content:
-    "";
-
-  display:
-    block;
-
-  width:
-    50px;
-
-  height:
-    3px;
-
-  margin-top:
-    9px;
-
-  border-radius:
-    5px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ff2b75,
-      #19c8e8
-    );
-}
-
-
-
-/* =====================================================
-   PROJECT GRID
-   3 CARDS PER ROW
-===================================================== */
+/* =========================================================
+   3 PROJECTS PER ROW
+========================================================= */
 
 .projects-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
 
-  gap:
-    25px;
+  gap: 26px;
+
 }
 
 
-
-/* =====================================================
+/* =========================================================
    PROJECT CARD
-   BLACK
-===================================================== */
+========================================================= */
 
 .project-card {
 
-  background:
-    #929082;
+  display: flex;
 
-  border:
-    1px solid
-    #202020;
+  flex-direction: column;
 
-  border-radius:
-    18px;
+  min-width: 0;
 
-  overflow:
-    hidden;
+  background: #0b0b0b;
+
+  border: 1px solid #242424;
+
+  border-radius: 20px;
+
+  overflow: hidden;
 
   transition:
     transform 0.3s ease,
+    border-color 0.3s ease,
     box-shadow 0.3s ease;
+
 }
 
 
 .project-card:hover {
 
-  transform:
-    translateY(-5px);
+  transform: translateY(-7px);
+
+  border-color: #555;
 
   box-shadow:
-    0 15px 35px
-    rgba(0, 0, 0, 0.40);
+    0 15px 35px rgba(0, 0, 0, 0.35);
+
 }
 
 
-
-/* =====================================================
-   PROJECT IMAGE
-===================================================== */
+/* Equal image height */
 
 .project-image {
 
-  width:
-    100%;
+  width: 100%;
 
-  height:
-    200px;
+  height: 210px;
 
-  background-size:
-    cover;
+  min-height: 210px;
 
-  background-position:
-    center;
+  background-size: cover;
 
-  background-repeat:
-    no-repeat;
+  background-position: center;
+
+  background-repeat: no-repeat;
+
 }
 
 
-
-/* =====================================================
-   PROJECT CONTENT
-===================================================== */
+/* Equal content height */
 
 .project-content {
 
-  padding:
-    18px;
+  height: 285px;
+
+  min-height: 285px;
+
+  padding: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
 }
 
 
 .project-content h3 {
 
-  font-size:
-    21px;
+  color: #fff;
 
-  color:
-    #0f0f0f;
+  font-size: 22px;
 
-  margin-bottom:
-    10px;
+  margin-bottom: 13px;
+
 }
 
 
 .project-content p {
 
-  color:
-    #0c0c0c;
+  color: #d0d0d0;
 
-  font-size:
-    14px;
+  font-size: 14px;
 
-  line-height:
-    1.65;
+  line-height: 1.65;
 
-  margin-bottom:
-    12px;
+  margin-bottom: 15px;
+
 }
 
 
 .project-tech {
 
-  color:
-    #050505;
+  color: #a8a8a8;
 
-  opacity:
-    0.70;
+  font-size: 12px;
 
-  font-size:
-    12px;
+  line-height: 1.5;
 
-  line-height:
-    1.5;
+  margin-top: auto;
 
-  margin-bottom:
-    16px;
+  margin-bottom: 18px;
+
 }
 
 
 .project-buttons {
 
-  display:
-    flex;
+  display: flex;
 
-  gap:
-    9px;
+  gap: 9px;
 
-  flex-wrap:
-    wrap;
+  flex-wrap: wrap;
+
 }
 
 
-
-/* =====================================================
+/* =========================================================
    PAGE 4 — EXPERIENCE
-   GREY + WHITE + BLACK
-===================================================== */
+========================================================= */
 
 .experience-page {
 
-  background:
-    #3b3b3b;
+  background: #3a3a3a;
 
-  color:
-    #000;
+  padding: 90px 7%;
 
-  padding:
-    70px 50px;
+  align-items: flex-start;
 
-  align-items:
-    flex-start;
 }
 
 
 .experience-container {
 
-  width:
-    100%;
+  width: 100%;
 
-  max-width:
-    1150px;
+  max-width: 1200px;
 
-  margin:
-    0 auto;
+  margin: auto;
+
 }
 
 
-.experience-title {
+.experience-table {
 
-  color:
-    #f0ecec;
+  margin-top: 55px;
+
+  width: 100%;
+
 }
 
 
-.experience-title::after {
+/*
+  No cards.
+  Only horizontal separators.
+*/
 
-  background:
-    #111;
-}
+.experience-row {
 
-
-
-/* =====================================================
-   EXPERIENCE ITEM
-===================================================== */
-
-.experience-item {
-
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
-    0.75fr 1.5fr;
+    32% 68%;
 
-  gap:
-    60px;
+  gap: 60px;
 
-  padding:
-    32px 0;
+  padding: 45px 0;
 
-  border-bottom:
-    1px solid
-    #999;
+  border-top: 1px solid #777;
+
 }
 
 
-.experience-item:last-child {
+.experience-row:last-child {
 
-  border-bottom:
-    none;
+  border-bottom: 1px solid #777;
+
 }
 
-
-
-/* =====================================================
-   COMPANY
-===================================================== */
 
 .experience-company {
 
-  background:
-    #fff;
+  padding-left: 0;
 
-  padding:
-    25px;
-
-  border-radius:
-    16px;
-
-  border:
-    1px solid
-    #bbb;
-
-  height:
-    fit-content;
 }
 
 
 .experience-company h3 {
 
-  font-size:
-    23px;
+  color: #fff;
 
-  color:
-    #000;
+  font-size: 24px;
 
-  margin-bottom:
-    10px;
+  margin-bottom: 15px;
+
 }
 
 
 .experience-company span {
 
-  display:
-    block;
+  display: block;
 
-  font-size:
-    14px;
+  color: #d1d1d1;
 
-  color:
-    #444;
+  font-size: 15px;
 
-  margin-bottom:
-    5px;
-}
+  line-height: 1.7;
 
-
-
-/* =====================================================
-   EXPERIENCE DESCRIPTION
-===================================================== */
-
-.experience-description {
-
-  background:
-    #3b3b3b;
-
-  color:
-    #fff;
-
-  padding:
-    25px;
-
-  border-radius:
-    16px;
 }
 
 
 .experience-description p {
 
-  color:
-    #ddd;
+  color: #e1e1e1;
 
-  font-size:
-    15px;
+  font-size: 15px;
 
-  line-height:
-    1.75;
+  line-height: 1.8;
 
-  margin-bottom:
-    14px;
+  margin-bottom: 20px;
+
 }
 
 
 .experience-description p:last-child {
 
-  margin-bottom:
-    0;
+  margin-bottom: 0;
+
 }
 
 
-
-/* =====================================================
+/* =========================================================
    PAGE 5 — CONTACT
-   BLACK
-===================================================== */
+========================================================= */
 
 .contact-page {
 
-  background:
-    #000;
+  background: #000;
 
-  padding:
-    70px 40px;
+  padding: 80px 5%;
+
+  align-items: center;
+
 }
 
 
 .contact-container {
 
-  width:
-    100%;
+  width: 100%;
 
-  max-width:
-    1000px;
+  max-width: 1200px;
 
-  margin:
-    auto;
+  margin: auto;
 
-  text-align:
-    center;
 }
 
-
-.contact-title {
-
-  display:
-    inline-block;
-}
-
-
-
-/* =====================================================
-   CONTACT BOXES
-===================================================== */
 
 .contact-icons {
 
-  display:
-    flex;
+  display: grid;
 
-  justify-content:
-    center;
+  grid-template-columns:
+    repeat(4, 1fr);
 
-  align-items:
-    center;
+  gap: 25px;
 
-  flex-wrap:
-    wrap;
+  margin-top: 50px;
 
-  gap:
-    20px;
 }
 
 
+/*
+  Gradient background matching buttons
+*/
+
 .contact-box {
 
-  width:
-    135px;
+  min-height: 190px;
 
-  height:
-    135px;
+  border-radius: 22px;
 
-  display:
-    flex;
+  padding: 30px;
 
-  flex-direction:
-    column;
+  display: flex;
 
-  align-items:
-    center;
+  flex-direction: column;
 
-  justify-content:
-    center;
+  align-items: center;
 
-  gap:
-    10px;
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #fff;
 
   background:
-    #111;
-
-  border:
-    1px solid
-    #292929;
-
-  border-radius:
-    18px;
-
-  color:
-    #fff;
+    linear-gradient(
+      120deg,
+      var(--pink),
+      var(--purple),
+      var(--blue)
+    );
 
   transition:
-    0.3s ease;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
 }
 
 
 .contact-box:hover {
 
-  transform:
-    translateY(-5px);
+  transform: translateY(-8px);
 
-  border-color:
-    #19c8e8;
+  box-shadow:
+    0 15px 35px rgba(32, 185, 232, 0.22);
+
 }
 
 
 .contact-box img {
 
-  width:
-    42px;
+  width: 65px;
 
-  height:
-    42px;
+  height: 65px;
 
-  object-fit:
-    contain;
+  object-fit: contain;
+
+  border-radius: 12px;
+
 }
 
 
 .contact-box span {
 
-  font-size:
-    14px;
+  font-size: 17px;
 
-  font-weight:
-    600;
+  font-weight: 800;
+
 }
 
 
-
-/* =====================================================
-   RIGHT DOT NAVIGATION
-===================================================== */
-
-.dots {
-
-  position:
-    fixed;
-
-  right:
-    22px;
-
-  top:
-    50%;
-
-  transform:
-    translateY(-50%);
-
-  z-index:
-    999;
-
-  display:
-    flex;
-
-  flex-direction:
-    column;
-
-  gap:
-    12px;
-}
-
-
-.dot {
-
-  width:
-    8px;
-
-  height:
-    8px;
-
-  border-radius:
-    50%;
-
-  background:
-    #777;
-
-  cursor:
-    pointer;
-
-  transition:
-    0.25s ease;
-}
-
-
-.dot:hover {
-
-  background:
-    #fff;
-}
-
-
-.dot.active {
-
-  transform:
-    scale(1.5);
-
-  background:
-    linear-gradient(
-      180deg,
-      #ff2b75,
-      #19c8e8
-    );
-}
-
-
-
-/* =====================================================
+/* =========================================================
    REVEAL ANIMATION
-===================================================== */
+========================================================= */
 
 .reveal-on-load {
 
-  opacity:
-    0;
+  opacity: 0;
 
-  transform:
-    translateY(25px);
+  transform: translateY(25px);
 
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
 }
 
 
 .reveal {
 
-  opacity:
-    1;
+  opacity: 1;
 
-  transform:
-    translateY(0);
+  transform: translateY(0);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+
 }
 
 
-
-/* =====================================================
+/* =========================================================
    TABLET
-===================================================== */
+========================================================= */
 
 @media (max-width: 1050px) {
 
+  .home-page {
+    padding: 50px 25px;
+  }
+
   .hero-card {
-
-    width:
-      calc(100vw - 80px);
-
+    padding: 60px 50px;
   }
 
-
-  .about-container {
-
-    grid-template-columns:
-      1fr;
-
+  .about-grid {
+    grid-template-columns: 1fr;
   }
-
 
   .projects-grid {
-
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
-
   }
 
-
-  .experience-item {
-
+  .contact-icons {
     grid-template-columns:
-      1fr;
-
-    gap:
-      20px;
+      repeat(2, 1fr);
   }
 
 }
 
 
-
-/* =====================================================
+/* =========================================================
    MOBILE
-===================================================== */
+========================================================= */
 
 @media (max-width: 700px) {
 
-  html {
-
-    scroll-snap-type:
-      none;
-
+  .slide {
+    min-height: auto;
   }
 
 
-  .home-container {
+  /* HOME */
 
-    padding:
-      25px 18px;
+  .home-page {
+
+    min-height: 100vh;
+
+    padding: 30px 16px;
 
   }
 
 
   .hero-card {
 
-    width:
-      100%;
+    min-height: auto;
 
-    min-height:
-      auto;
+    padding: 45px 25px;
 
-    padding:
-      35px 25px;
+    border-radius: 20px;
 
   }
 
 
   .hero-content h1 {
 
-    font-size:
-      40px;
+    font-size: 44px;
 
   }
 
 
   .hero-content h2 {
 
-    font-size:
-      19px;
+    font-size: 20px;
 
   }
 
 
   .hero-content p {
 
-    font-size:
-      14px;
+    font-size: 15px;
+
+    line-height: 1.7;
 
   }
 
 
-  .about-page,
-  .projects-page,
-  .experience-page,
-  .contact-page {
+  /* ABOUT */
 
-    padding:
-      50px 20px;
+  .about-page {
+
+    padding: 60px 16px;
 
   }
 
@@ -1358,61 +1072,140 @@ a {
   .about-card,
   .skills-card {
 
-    padding:
-      25px;
+    padding: 28px;
 
   }
 
 
-  .section-title {
+  .about-card h2,
+  .skills-card h2 {
 
-    font-size:
-      34px;
+    font-size: 30px;
 
   }
 
 
-  /* ONE CARD PER ROW ON MOBILE */
+  /* PROJECTS */
+
+  .projects-page {
+
+    padding: 60px 16px;
+
+  }
+
 
   .projects-grid {
 
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
 
   }
 
 
   .project-image {
 
-    height:
-      180px;
+    height: 220px;
+
+    min-height: 220px;
 
   }
 
 
-  .experience-item {
+  .project-content {
 
-    padding:
-      25px 0;
+    height: auto;
 
-  }
-
-
-  .dots {
-
-    right:
-      10px;
+    min-height: 270px;
 
   }
 
 
-  .dot {
+  /* EXPERIENCE */
 
-    width:
-      7px;
+  .experience-page {
 
-    height:
-      7px;
+    padding: 60px 20px;
+
+  }
+
+
+  .experience-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 35px 0;
+
+  }
+
+
+  /* CONTACT */
+
+  .contact-page {
+
+    padding: 60px 20px;
+
+  }
+
+
+  .contact-icons {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .contact-box {
+
+    min-height: 150px;
+
+  }
+
+
+  .section-title {
+
+    font-size: 34px;
+
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .hero-content h1 {
+
+    font-size: 38px;
+
+  }
+
+  .hero-buttons {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+  .button {
+
+    width: 100%;
+
+  }
+
+  .project-buttons {
+
+    flex-direction: column;
+
+  }
+
+  .small-button {
+
+    width: 100%;
 
   }
 
