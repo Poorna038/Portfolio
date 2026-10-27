@@ -592,7 +592,7 @@ a {
 .projects-page {
 
   background:
-    #d3d3d3;
+    #070707;
 
   padding:
     70px 50px;
@@ -629,7 +629,7 @@ a {
     800;
 
   color:
-    #fff;
+    #080808;
 
   margin-bottom:
     35px;
@@ -693,7 +693,7 @@ a {
 .project-card {
 
   background:
-    #090909;
+    #929082;
 
   border:
     1px solid
@@ -733,7 +733,7 @@ a {
     100%;
 
   height:
-    170px;
+    190px;
 
   background-size:
     cover;
@@ -764,7 +764,7 @@ a {
     21px;
 
   color:
-    #fff;
+    #929082;
 
   margin-bottom:
     10px;
@@ -790,7 +790,7 @@ a {
 .project-tech {
 
   color:
-    #fff;
+    #050505;
 
   opacity:
     0.70;
